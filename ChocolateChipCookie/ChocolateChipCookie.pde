@@ -13,12 +13,14 @@ void setup() {
 }//End setup
 //
 void draw() {
+  if () ; //OS Level MOUSE Click
 }//End draw
 //
 void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
+  //OS Level MouseClick
 }//End mousePressed
 //
 //End MAIN Program
