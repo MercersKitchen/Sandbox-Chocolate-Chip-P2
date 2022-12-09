@@ -1,5 +1,6 @@
 String spaceBar = "Press the Space Bar to Continue";
 PFont font;
+color purple=#FF00FF; //Not for Night Mode, full BLUE
 //
 void textSetup() {
   //Minimum Expectation is SINGLE FONT
