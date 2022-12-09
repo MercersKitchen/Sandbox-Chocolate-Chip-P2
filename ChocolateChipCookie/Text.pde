@@ -1,7 +1,9 @@
 String spaceBar = "Press the Space Bar to Continue";
+PFont font;
 //
 void textSetup() {
-  //One FONT only here
+  //Minimum Expectation is SINGLE FONT
+  //
   //Fonts from OS (Operating System)
   // String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList); //For listing all possible fonts to choose from, then createFont
