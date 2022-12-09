@@ -3,7 +3,7 @@ void population() {
   startX = ;
   startY = ;
   startWidth = appWidth*1/2;
-  startHeight = ;
+  startHeight = appHeight*1/10;
 }//End Population
 //
 //ENd Population Subprogram
