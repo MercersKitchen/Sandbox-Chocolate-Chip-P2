@@ -14,7 +14,7 @@ void setup() {
 }//End setup
 //
 void draw() {
-  if () ; //OS Level MOUSE Click
+  if ( OS_On==true ) splashScreen(); //OS Level MOUSE Click
 }//End draw
 //
 void keyPressed() {
@@ -22,7 +22,7 @@ void keyPressed() {
 //
 void mousePressed() {
   //OS Level MouseClick
-  if ( OS_On==true ) {}//End OS Level MouseClick 
+  if ( OS_On==false ) OS_On=true;//End OS Level MouseClick 
 }//End mousePressed
 //
 //End MAIN Program
