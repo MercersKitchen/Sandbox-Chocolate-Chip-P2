@@ -1,4 +1,4 @@
-int startX, startY, startWidth, startHeight;
+float startX, startY, startWidth, startHeight;
 //
 void splashScreen() {
   /*Note: any visually-based code running in SetUp() controlled by MouseClick
