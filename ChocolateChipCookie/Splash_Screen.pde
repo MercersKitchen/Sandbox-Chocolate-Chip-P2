@@ -11,7 +11,9 @@ void splashScreen() {
    - Splash Screen Details
    */
    background(255); //testing only
-   rect(startX, startY, startWidth, startHeight); //Start Button Text, testing only
+   
+   spaceBarText();
+   text(); //"Press SPACE to Continue"
 }//End splashScreen
 //
 //End Splash Screen Subprogram
