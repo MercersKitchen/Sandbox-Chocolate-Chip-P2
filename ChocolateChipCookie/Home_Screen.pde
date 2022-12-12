@@ -1,3 +1,5 @@
+float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+//
 void homeScreen() { //Exists in VOID DRAW
   println("Arrived at Home Screen"); //Testing for Splash Screen Start Button working
   /* Home Screen Expectations
