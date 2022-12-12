@@ -22,8 +22,12 @@ void backgroundWhiteScreen() {
   fill(white); //Reset: white
 }//End backgroundWhiteScreen
 //
+void imageSetup() {
+}//End imageSetup
+//
 void backgroundImage() {
   backgroundWhiteScreen();
+  image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
 }//End backgroundImage
 //
