@@ -15,12 +15,16 @@ void homeScreen() { //Exists in VOID DRAW
 }//End homeScreen
 //
 void backgroundWhiteScreen() {
+  fill(white);
   noStroke();
   rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight ); //white colour
   stroke(1); //Reset: 1 pixel
+  fill(white); //Reset: white
 }//End backgroundWhiteScreen
 //
 void backgroundImage() {
+  backgroundWhiteScreen();
+  //image with tint()
 }//End backgroundImage
 //
 //End Home Screen Subprogram
