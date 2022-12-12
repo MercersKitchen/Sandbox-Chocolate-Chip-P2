@@ -22,6 +22,8 @@ void draw() {
 }//End draw
 //
 void keyPressed() {
+  //Splash Screen SPACE Bar
+  if () splashScreenStart = true;
 }//End keyPressed
 //
 void mousePressed() {
