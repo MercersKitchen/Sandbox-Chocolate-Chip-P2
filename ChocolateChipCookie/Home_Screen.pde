@@ -14,7 +14,7 @@ void homeScreen() { //Exists in VOID DRAW
 //
 void backgroundWhiteScreen() {
   noStroke();
-  rect();
+  rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight ); //white colour
   stroke(1); //Reset: 1 pixel
 }//End backgroundWhiteScreen
 //
