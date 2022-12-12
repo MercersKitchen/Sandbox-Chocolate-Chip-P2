@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false;
+Boolean OS_On=false, splashScreenStart=false;
 //
 void setup() {
   size(600, 400);
@@ -23,7 +23,7 @@ void draw() {
 //
 void keyPressed() {
   //Splash Screen SPACE Bar
-  if () splashScreenStart = true;
+  if (  ) splashScreenStart = true;
 }//End keyPressed
 //
 void mousePressed() {
