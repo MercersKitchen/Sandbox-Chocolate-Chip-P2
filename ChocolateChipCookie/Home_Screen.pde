@@ -12,8 +12,13 @@ void homeScreen() { //Exists in VOID DRAW
   //
 }//End homeScreen
 //
+void backgroundWhiteScreen() {
+  noStroke();
+  rect();
+  stroke(1); //Reset: 1 pixel
+}//End backgroundWhiteScreen
+//
 void backgroundImage() {
-  
 }//End backgroundImage
 //
 //End Home Screen Subprogram
