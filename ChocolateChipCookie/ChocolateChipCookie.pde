@@ -18,12 +18,13 @@ void setup() {
 void draw() {
   //Assignemnt #2: OS Level Mouse CLick and Splash Screen
   if ( OS_On==true ) splashScreen(); //OS Level MOUSE Click
+  if ( splashScreenStart==true ) homeScreen();
   //
 }//End draw
 //
 void keyPressed() {
   //Splash Screen SPACE Bar
-  if (  ) splashScreenStart = true;
+  if ( key==' ' ) splashScreenStart = true;
 }//End keyPressed
 //
 void mousePressed() {
