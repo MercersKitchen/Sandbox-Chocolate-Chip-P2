@@ -17,10 +17,14 @@ void homeScreen() { //Exists in VOID DRAW
    */
 
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
+    fill(white);
+    rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
+    noFill();
+    println("Here");
   } else { 
     quitButtonText();
   }
-  rect( quitX, quitY, quitWidth, quitHeight ); //quit button
+  //rect( quitX, quitY, quitWidth, quitHeight );
   //
 }//End homeScreen
 //
