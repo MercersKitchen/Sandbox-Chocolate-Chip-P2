@@ -34,6 +34,10 @@ void keyPressed() {
     splashScreenStart = true;
     backgroundImage();
   }//End Splash Screen SPACE Bar
+  //
+  //Key Board Short Cuts
+  if ( ) exit();
+  if ( ) {nightMode = true;} else {nightMode = false;}
  //
 }//End keyPressed
 //
