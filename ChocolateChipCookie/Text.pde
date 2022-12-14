@@ -19,7 +19,7 @@ void spaceBarText() {
   int size = 20; //Change the number until it fits
   textFont(font, size); 
   text( spaceBar, startX, startY, startWidth, startHeight );
-  fill(resetDefaultInk);
+  noFill();
 }//End spaceBarText
 //
 void quitButtonText() {
