@@ -1,6 +1,8 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false, splashScreenStart=false;
+Boolean nightMode=false; //Bonus #1: populate with sytem clock
+//Ultimate Bonus, Gr 11: use API-sunrise for system clock start, API-sunset for system clock end
 color resetDefaultInk=#000000, white=#FFFFFF, purple=#FF00FF;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
