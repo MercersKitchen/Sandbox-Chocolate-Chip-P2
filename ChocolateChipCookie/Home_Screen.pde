@@ -15,8 +15,12 @@ void homeScreen() { //Exists in VOID DRAW
    - See Case Study
    - Note: must have one image with aspect ratio
    */
-   //"Quit Text"
-   rect( quitX, quitY, quitWidth, quitHeight ); //quit button
+
+  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
+  } else { 
+    quitButtonText();
+  }
+  rect( quitX, quitY, quitWidth, quitHeight ); //quit button
   //
 }//End homeScreen
 //
