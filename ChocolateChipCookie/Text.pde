@@ -1,4 +1,5 @@
 String spaceBar = "Press the Space Bar to Continue";
+String quit = "Quit";
 PFont font;
 void textSetup() {
   //Minimum Expectation is SINGLE FONT
