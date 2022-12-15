@@ -11,7 +11,6 @@ void quitButtonImage() {
   //Image's matching dimension matching to rectangle's largest dimension
   //Image's other dimension, scaled
   int quitButtonImageWidth=1707, quitButtonImageHeight=2560;
-  
   rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
 }//End quitButtonImage
 //
