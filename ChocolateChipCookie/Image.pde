@@ -7,9 +7,6 @@ void imageSetup() {//Image Population
 //
 void quitButtonImage() {
   quitButtonImage = backgroundImage;
-
-  
-  //Image's other dimension, scaled
   //
   //Image Dimensions
   float quitButtonImageWidth=1707, quitButtonImageHeight=2560;
@@ -18,7 +15,7 @@ void quitButtonImage() {
   float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;
   float quitButtonImageWidth_Calculated=0.0, quitButtonImageHeight_Calculated=0.0;
   float largerDimension=0.0, smallerDimension=0.0;
-  float imageWidthRatio=0.0, imageHeigthRatio=0.0; 
+  float imageWidthRatio=0.0, imageHeightRatio=0.0; 
   //
   if ( quitButtonImageWidth >= quitButtonImageHeight ) {//Image's largest dimension, Landscape or Square
     largerDimension = quitButtonImageWidth;
@@ -26,13 +23,22 @@ void quitButtonImage() {
     //
     //Image's matching dimension to rectangle's matching dimension
     quitButtonImageWidth_Adjusted = quitButtonImageRectWidth;
-    imageHeigthRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
-    
+    imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
+    quitButtonImageHeight_Calculated = imageHeightRatio * quitButtonImageRectWidth;
     //
   } else {//Portrait
     largerDimension = quitButtonImageHeight;
     smallerDimension = quitButtonImageWidth;
+    //
+    //Image's matching dimension to rectangle's matching dimension
+    quitButtonImageHeight_Adjusted = quitButtonImageRectHeight;
+    imageWidthRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
+    quitButtonImageWidth_Calculated = imageWidthRatio * quitButtonImageRectHeight;
+    //
+    image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Calculated, quitButtonImageHeight_Adjusted );
+    //
   }
+  image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY,  );
 }//End quitButtonImage
 //
 //End Image Subprogram
