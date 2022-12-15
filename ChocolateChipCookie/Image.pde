@@ -25,6 +25,9 @@ void quitButtonImage() {
     quitButtonImageWidth_Adjusted = quitButtonImageRectWidth;
     imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageHeight_Calculated = imageHeightRatio * quitButtonImageRectWidth;
+   //
+   image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
+    //
     //
   } else {//Portrait
     largerDimension = quitButtonImageHeight;
