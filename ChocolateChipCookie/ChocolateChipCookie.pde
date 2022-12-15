@@ -39,26 +39,30 @@ void keyPressed() {
   }//End Splash Screen SPACE Bar
   //
   //Key Board Short Cuts
-  if ( key==CODED || keyCode==ESC ) exit();
-  if ( key=='Q' || key=='q' ) exit();
-  if ( key=='N' || key=='n' ) {
-    if ( nightMode==false ) { 
-      nightMode = true;
-      backgroundImage();
-      //Reminder: must redraw all of rectangles too, and Home Screen
-    } else { 
-      nightMode = false;
-      backgroundImage();
-      //Reminder: must redraw all of rectangles too, and Home Screen
+  if ( OS_On==true && splashScreenStart==false ) {//Home Screen Only Variables
+    if ( key==CODED || keyCode==ESC ) exit();
+    if ( key=='Q' || key=='q' ) exit();
+    if ( key=='N' || key=='n' ) {
+      if ( nightMode==false ) { 
+        nightMode = true;
+        backgroundImage();
+        //Reminder: must redraw all of rectangles too, and Home Screen
+      } else { 
+        nightMode = false;
+        backgroundImage();
+        //Reminder: must redraw all of rectangles too, and Home Screen
+      }
     }
-  }
+  }//Home Screen Only
   //
 }//End keyPressed
 //
 void mousePressed() {
   //OS Level MouseClick
   if ( OS_On==false ) OS_On=true;//End OS Level MouseClick
-  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
+  if ( OS_On==true && splashScreenStart==false ) {//Home Screen Only Variables
+    if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
+  }//Home Screen Only
   //
 }//End mousePressed
 //
