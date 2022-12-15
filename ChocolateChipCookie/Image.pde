@@ -7,11 +7,18 @@ void imageSetup() {//Image Population
 //
 void quitButtonImage() {
   quitButtonImage = backgroundImage;
-  //Rectangle's largest dimension
+
   //Image's matching dimension matching to rectangle's largest dimension
   //Image's other dimension, scaled
+  //
+  //Image Dimensions
   int quitButtonImageWidth=1707, quitButtonImageHeight=2560;
   rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+  //
+  if ( quitButtonImageWidth >= quitButtonImageHeight ) {//Image's largest dimension, Landscape or Square
+    
+  } else {
+  }
 }//End quitButtonImage
 //
 //End Image Subprogram
