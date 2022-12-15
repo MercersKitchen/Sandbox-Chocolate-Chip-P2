@@ -58,6 +58,7 @@ void keyPressed() {
 void mousePressed() {
   //OS Level MouseClick
   if ( OS_On==false ) OS_On=true;//End OS Level MouseClick
+  if () exit();
 }//End mousePressed
 //
 //End MAIN Program

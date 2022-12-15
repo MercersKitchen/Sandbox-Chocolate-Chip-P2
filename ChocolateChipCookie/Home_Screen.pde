@@ -15,8 +15,6 @@ void homeScreen() { //Exists in VOID DRAW
    - See Case Study
    - Note: must have one image with aspect ratio
    */
-
-
 //
 //Quit Button, move to Button Subprogram
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
