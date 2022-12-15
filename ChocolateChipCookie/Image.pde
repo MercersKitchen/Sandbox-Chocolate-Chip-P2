@@ -8,16 +8,30 @@ void imageSetup() {//Image Population
 void quitButtonImage() {
   quitButtonImage = backgroundImage;
 
-  //Image's matching dimension matching to rectangle's largest dimension
+  
   //Image's other dimension, scaled
   //
   //Image Dimensions
-  int quitButtonImageWidth=1707, quitButtonImageHeight=2560;
+  float quitButtonImageWidth=1707, quitButtonImageHeight=2560;
   rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+  //Following vars must be populated or debugger error
+  float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;
+  float quitButtonImageWidth_Calculated=0.0, quitButtonImageHeight_Calculated=0.0;
+  float largerDimension=0.0, smallerDimension=0.0;
+  float imageWidthRatio=0.0, imageHeigthRatio=0.0; 
   //
   if ( quitButtonImageWidth >= quitButtonImageHeight ) {//Image's largest dimension, Landscape or Square
+    largerDimension = quitButtonImageWidth;
+    smallerDimension = quitButtonImageHeight;
+    //
+    //Image's matching dimension to rectangle's matching dimension
+    quitButtonImageWidth_Adjusted = quitButtonImageRectWidth;
+    imageHeigthRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     
-  } else {
+    //
+  } else {//Portrait
+    largerDimension = quitButtonImageHeight;
+    smallerDimension = quitButtonImageWidth;
   }
 }//End quitButtonImage
 //
